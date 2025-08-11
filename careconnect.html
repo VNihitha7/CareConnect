@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right,rgba(149, 70, 183, 0.85),rgba(228, 110, 169, 0.9), rgba(149, 70, 183, 0.85)),
+                  url('https://images.unsplash.com/photo-1588776814546-ec7e6be43f06?auto=format&fit=crop&w=1650&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    h1 {
+  font-size: 70px;       /* ← Increase size */
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.4);
+}
+h2 {
+  font-size: 40px;       /* ← Increase size */
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.4);
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.services-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  color: #000000;
+  font-size: 18px;
+}
+    h1, h2 {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .fancy-logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      animation: float 4s ease-in-out infinite;
+    }
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.15);
+  color: rgb(0, 0, 0);
+  padding: 25px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  font-style: italic;
+  transition: transform 0.3s ease, background 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+}
+
+
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+
+    .image-row img {
+      width: 220px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .image-row img:hover {
+      transform: scale(1.05);
+    }
+
+    form {
+      background: rgba(255,255,255,0.15);
+      padding: 30px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 400px;
+      margin: 30px auto;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #ffcc00;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .chatbot-ui {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 400px;
+      margin: 30px auto;
+      text-align: left;
+    }
+
+    .chatbot-ui p {
+      background: rgba(0,0,0,0.3);
+      padding: 10px;
+      border-radius: 10px;
+      margin: 5px 0;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeSlide {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .services-section, .image-row {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-wrapper">
+    <img src="https://r2.erweima.ai/imgcompressed/compressed_92ff7b2404fdb54ed23228c9515a1e31.webp" alt="Logo" class="fancy-logo" />
+  </div>
+  <h1>Welcome to CareConnect</h1>
+  <h2>Our Services</h2>
+<div class="services-list">
+  <ul>
+    <li>Online Doctor Consultations</li>
+    <li>Mental Health Support</li>
+    <li>Business Strategy & Growth Guidance</li>
+    <li>24/7 Virtual Assistance</li>
+  </ul>
+</div>
+<h2>What Our Users Say</h2>
+<div class="testimonials">
+  <div class="testimonial-card">
+    <p>“I received quick medical advice from a specialist through CareConnect. It was a lifesaver!”</p>
+    <h4>- Priya</h4>
+  </div>
+  <div class="testimonial-card">
+    <p>“The platform is reliable and user-friendly—perfect for busy professionals like me.”</p>
+    <h4>- Rakesh</h4>
+  </div>
+  <div class="testimonial-card">
+    <p>“I was able to consult a psychiatrist online without any hassle. Excellent support!”</p>
+    <h4>- Anjali</h4>
+  </div>
+</div>
+</div>
+  <h2>Our Care Areas</h2>
+  <div class="image-row">
+    <img src="https://www.practo.com/consumer-ui/_next/image?url=https%3A%2F%2Fimages1-fabric.practo.com%2Fpractices%2F776630%2Fkamineni-hospital-vijayawada-664756c6e2c1b.png&w=3840&q=75" alt="Hospital 1">
+    <img src="https://images.jdmagicbox.com/comp/vijayawada/x6/0866px866.x866.130701163402.y2x6/catalogue/manipal-super-speciality-hospital-tadepalli-vijayawada-hospitals-31387ujvz1.jpg" alt="Hospital 2">
+    <img src="https://www.studymbbs.com/wp-content/uploads/2024/06/All-India-Institute-of-Medical-Sciences.jpg" alt="Hospital 3">
+  </div>
+
+  <h2>Book Appointment</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="text" placeholder="Contact Number" required>
+    <textarea rows="4" placeholder="Describe your health issue..."></textarea>
+    <label>Select Date:</label>
+    <input type="date" required>
+    <button type="submit">Book Now</button>
+  </form>
+
+  <h2>Chat With Us</h2>
+  <div class="chatbot-ui">
+    <p><strong>User:</strong> Hi, I need help with my symptoms.</p>
+    <p><strong>Bot:</strong> Sure! Can you describe what you're feeling?</p>
+    <p><strong>User:</strong> I have had a cough for 3 days.</p>
+    <p><strong>Bot:</strong> Noted! Would you like to book a consultation?</p>
+  </div>
+</body>
+</html>
